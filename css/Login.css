@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Lora:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #6c6d70;
+    text-align: left;
+    line-height: 14px;
+    flex-wrap: wrap;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --primary-color: #221F20;
+    --secondary-color: #fff;
+}
+
+
+
+main{
+    padding-top: 80px;
+    display: block;
+}
+
+main .container{
+    margin: 20px 6%;
+    border-bottom: 1px solid #3e3e3e;
+}
+
+.auth-row{
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    flex-wrap: nowrap;
+}
+
+.auth-login,
+.auth-resister{
+    max-width: 100%;
+    flex: 0 0 480px;
+}
+
+.auth-row::before {
+    position: absolute;
+    content: "";
+    height: 325px;
+    width: 1px;
+    left: 50%;
+    top: 0;
+    background-color: #e7e8e9;
+}
+
+.auth-title{
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 0;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.auth-content{
+    margin-top: 10px;
+}
+
+.auth-content p{
+    text-align: center;
+    font-size: 15px;
+    line-height: 24px;
+    color: #6c6d70;
+}
+
+.auth-form{
+    margin: 24px 30px;
+    width: 400px;
+    max-width: 100%;
+}
+
+.auth-form .form-input{
+    margin: 10px 0;
+    height: 48px;
+    color: red;
+}
+
+.auth-form .form-control{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #E7E8E9;
+    padding: 15px;
+    font-size: 14px;
+    color: #57585A;
+}
+
+.auth-form .form-option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.auth-form .form-checkbox label{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.auth-form .checkbox{
+    width: 18px;
+    height: 18px;
+}
+
+.auth-form span{
+    font-size: 16px;
+    color: #6c6d70;
+}
+
+.auth-form .form-link{
+    font-size: 14px;
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.form-button{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.form-button button{
+    cursor: pointer;
+    background: none;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 12px;
+    border-radius: 16px 0px;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: var(--primary-color);
+    color: #f7f8f9;
+    border: 1px solid transparent;
+    text-align: center;
+    transition: all .3s ease;
+}
+
+.form-button button:hover{
+    cursor: pointer;
+    background: none;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 12px;
+    border-radius: 16px 0px;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--primary-color);
+    background-color: #f7f8f9;
+    border: 1px solid var(--primary-color);
+    text-align: center;
+}
+
+.form-button a{
+    display: inherit;
+    background: none;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 12px;
+    border-radius: 16px 0px;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: var(--primary-color);
+    color: #f7f8f9;
+    border: 1px solid transparent;
+    text-align: center;
+    transition: all .3s ease;
+}
+
+.form-button a:hover{
+    cursor: pointer;
+    background: none;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 12px;
+    border-radius: 16px 0px;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--primary-color);
+    background-color: #f7f8f9;
+    border: 1px solid var(--primary-color);
+    text-align: center;
+}
+
+
+/* --------------RESPONSIVE------------- */
+
+@media (max-width: 1024px) {
+    .auth-row{
+        display: block;
+        
+    }
+    .auth-row::before{
+        position: unset;
+    }
+    main .container{
+        margin: 20px 4%;
+    }
+
+    .auth-form{
+        width: auto;
+    }
+}
